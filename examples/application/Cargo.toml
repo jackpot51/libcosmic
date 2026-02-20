@@ -20,7 +20,7 @@ features = [
     "tokio",
     "xdg-portal",
     "a11y",
-    "wgpu",
+    #"wgpu",
     "single-instance",
     "surface-message",
 ]
