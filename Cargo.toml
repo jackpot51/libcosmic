@@ -229,6 +229,7 @@ tempfile = "3.24.0"
 
 [patch.crates-io]
 rustix = { git = "https://github.com/bytecodealliance/rustix" }
+zbus = { git = "https://github.com/jackpot51/zbus", branch = "redox" }
 # wayland-rs patches using git
 wayland-backend = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
 wayland-client = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
