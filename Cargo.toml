@@ -227,6 +227,9 @@ dirs = "6.0.0"
 [dev-dependencies]
 tempfile = "3.24.0"
 
+[patch.'https://github.com/pop-os/winit']
+winit = { git = "https://github.com/jackpot51/winit", branch = "redox-wayland-pop" }
+
 [patch.crates-io]
 rustix = { git = "https://github.com/bytecodealliance/rustix" }
 zbus = { git = "https://github.com/jackpot51/zbus", branch = "redox" }
