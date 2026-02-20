@@ -226,3 +226,26 @@ dirs = "6.0.0"
 
 [dev-dependencies]
 tempfile = "3.24.0"
+
+[patch.crates-io]
+rustix = { git = "https://github.com/bytecodealliance/rustix" }
+# wayland-rs patches using git
+wayland-backend = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-client = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-cursor = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-egl = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-protocols = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-protocols-misc = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-protocols-wlr = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-server = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+wayland-sys = { git = "https://github.com/jackpot51/wayland-rs.git", branch = "redox" }
+# wayland-rs patches when using local changes
+#wayland-backend = { path = "../../wayland-rs/source/wayland-backend" }
+#wayland-client = { path = "../../wayland-rs/source/wayland-client" }
+#wayland-cursor = { path = "../../wayland-rs/source/wayland-cursor" }
+#wayland-egl = { path = "../../wayland-rs/source/wayland-egl" }
+#wayland-protocols = { path = "../../wayland-rs/source/wayland-protocols" }
+#wayland-protocols-misc = { path = "../../wayland-rs/source/wayland-protocols-misc" }
+#wayland-protocols-wlr = { path = "../../wayland-rs/source/wayland-protocols-wlr" }
+#wayland-server = { path = "../../wayland-rs/source/wayland-server" }
+#wayland-sys = { path = "../../wayland-rs/source/wayland-sys" }
